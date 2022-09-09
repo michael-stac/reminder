@@ -22,7 +22,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: const Color(0xffEDF5FF),
         onPressed: () {
-         Navigator.push(context, MaterialPageRoute(builder: (context) =>RegisterPage()));
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => RegisterPage()));
         },
         child: Text(
           "Next",
@@ -56,10 +57,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           padding: const EdgeInsets.symmetric(horizontal: 41),
           child: Text(
             "STUDEASY",
-            style: TextStyles.bold(
-              14,
-                AppColors.vanadyBlue
-            ),
+            style: TextStyles.bold(14, AppColors.vanadyBlue),
           ),
         ),
       ),
@@ -108,9 +106,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
                     );
                   }),
             ),
-            const SizedBox(height: 10),
             const SizedBox(
-              height: 30,
+              height: 40,
             ),
           ],
         ),

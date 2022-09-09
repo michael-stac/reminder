@@ -11,6 +11,13 @@ class ScreenTwo extends StatefulWidget {
 }
 
 class _ScreenTwoState extends State<ScreenTwo> {
+  List<Map> activities = [
+    {"status": "completed", "title": "Focus Read ", "time": "1:30pm"},
+    {"status": "ongoing", "title": "Focus Read ", "time": "1:30pm"},
+    {"status": "Next", "title": "Focus Read ", "time": "1:30pm"},
+    {"status": "Later", "title": "Focus Read ", "time": "1:30pm"},
+    {"status": "Later", "title": "Focus Read ", "time": "1:30pm"},
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -102,166 +109,49 @@ class _ScreenTwoState extends State<ScreenTwo> {
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 10,
-                                color: AppColors.black
+                                color: AppColors.black),
+                          ),
+                        ),
+                        ...List.generate(activities.length, (index) {
+                          final data = activities[index];
+
+                          final time = data['status'] == "completed" ||
+                                  data['status'] == "ongoing"
+                              ? ''
+                              : " - ${data['time']}";
+
+                          final image = data['status'] == 'completed'
+                              ? "assets/images/loading.png"
+                              : data['status'] == "ongoing"
+                                  ? "assets/images/progress.png"
+                                  : "assets/images/downlod.png";
+
+                          return ListTile(
+                            leading: Text(
+                              "0${index + 1}",
+                              style: GoogleFonts.roboto(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 28,
+                                  color: AppColors.softBlue),
                             ),
-                          ),
-                        ),
-                        ListTile(
-                          leading: Text(
-                            "01",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 28,
-                                color: AppColors.softBlue),
-                          ),
-                          title: Text(
-                            "COMPLETED",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 6,
-                                color: AppColors.gray),
-                          ),
-                          subtitle: Text(
-                            "Focus Read 1",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 12,
-                                color: AppColors.black,)
-                          ),
-                          trailing: const Image(
-                            image: AssetImage(("assets/images/loading.png")),
-                          ),
-                        ),
-                        ListTile(
-                          leading: Text(
-                            "02",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 28,
-                                color: AppColors.softBlue),
-                          ),
-                          title: Text(
-                            "ONGOING",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 6,
-                                color: AppColors.gray),
-                          ),
-                          subtitle: Text(
-                            "Focus Read 2",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 12,
-                              color: AppColors.black,),
-                          ),
-                          trailing: const Image(
-                            image: AssetImage(("assets/images/progress.png")),
-                          ),
-                        ),
-                        ListTile(
-                          leading: Text(
-                            "03",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 28,
-                                color: AppColors.softBlue),
-                          ),
-                          title: Text(
-                            "NEXT - 1:30pm",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 6,
-                                color: AppColors.gray),
-                          ),
-                          subtitle: Text(
-                            "Focus Read 3",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 12,
-                                color: AppColors.black),
-                          ),
-                          trailing: const Image(
-                            image: AssetImage(("assets/images/downlod.png")),
-                          ),
-                        ),
-                        ListTile(
-                          leading: Text(
-                            "04",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 28,
-                                color: AppColors.softBlue),
-                          ),
-                          title: Text(
-                            "LATER - 3:30pm",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 6,
-                                color: AppColors.gray),
-                          ),
-                          subtitle: Text(
-                            "Focus Read 4",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 12,
-                                color: AppColors.black),
-                          ),
-                          trailing: const Image(
-                            image: AssetImage(("assets/images/downlod.png")),
-                          ),
-                        ),
-                        ListTile(
-                          leading: Text(
-                            "04",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 28,
-                                color: AppColors.softBlue),
-                          ),
-                          title: Text(
-                            "LATER - 3:30pm",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 6,
-                                color: AppColors.gray),
-                          ),
-                          subtitle: Text(
-                            "Focus Read 4",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 12,
-                                color: AppColors.black),
-                          ),
-                          trailing: const Image(
-                            image: AssetImage(("assets/images/downlod.png")),
-                          ),
-                        ),
-                        ListTile(
-                          leading: Text(
-                            "05",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w700,
-                                fontSize: 28,
-                                color: AppColors.softBlue),
-                          ),
-                          title: Text(
-                            "6:00pm",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 6,
-                                color: AppColors.gray),
-                          ),
-                          subtitle: Text(
-                            "Focus Read 5",
-                            style: GoogleFonts.roboto(
-                                fontWeight: FontWeight.w500,
-                                fontSize: 12,
-                                color: AppColors.black),
-                          ),
-                          trailing: const Image(
-                            image: AssetImage(("assets/images/downlod.png")),
-                          ),
-                        ),
+                            title: Text(
+                              data['status'] + time,
+                              style: GoogleFonts.roboto(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 6,
+                                  color: AppColors.gray),
+                            ),
+                            subtitle: Text("Focus Read 1",
+                                style: GoogleFonts.roboto(
+                                  fontWeight: FontWeight.w500,
+                                  fontSize: 12,
+                                  color: AppColors.black,
+                                )),
+                            trailing: Image(
+                              image: AssetImage(image),
+                            ),
+                          );
+                        })
                       ],
                     ),
                   ),

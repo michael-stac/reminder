@@ -17,8 +17,6 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: SizedBox(
-        height: 70.0,
-        width: 90.0,
         child: FloatingActionButton(
           elevation: 0,
           backgroundColor: const Color(0xff333333),
@@ -45,10 +43,7 @@ class _RegisterPageState extends State<RegisterPage> {
         elevation: 0,
         title: Text(
           "STUDEASY",
-          style: TextStyles.bold(
-            14,
-              AppColors.vanadyBlue
-          ),
+          style: TextStyles.bold(14, AppColors.vanadyBlue),
         ),
       ),
       body: SingleChildScrollView(
