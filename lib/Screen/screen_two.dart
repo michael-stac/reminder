@@ -52,7 +52,7 @@ class _ScreenTwoState extends State<ScreenTwo> {
                         style: GoogleFonts.roboto(
                             fontSize: 12,
                             fontWeight: FontWeight.w400,
-                            color: const Color(0xff4F4F4F)),
+                            color: AppColors.staticLiver),
                       )
                     ],
                   ),
@@ -64,7 +64,7 @@ class _ScreenTwoState extends State<ScreenTwo> {
                     style: GoogleFonts.playfairDisplay(
                         fontWeight: FontWeight.w700,
                         fontSize: 36,
-                        color: const Color(0xff333333)),
+                        color: AppColors.black),
                   ),
                   const SizedBox(
                     height: 28,
@@ -112,21 +112,21 @@ class _ScreenTwoState extends State<ScreenTwo> {
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w700,
                                 fontSize: 28,
-                                color: const Color(0xffC3DEFF)),
+                                color: AppColors.softBlue),
                           ),
                           title: Text(
                             "COMPLETED",
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 6,
-                                color: const Color(0xffBDBDBD)),
+                                color: AppColors.gray),
                           ),
                           subtitle: Text(
                             "Focus Read 1",
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 12,
-                                color: const Color(0xff333333)),
+                                color: AppColors.black,)
                           ),
                           trailing: const Image(
                             image: AssetImage(("assets/images/loading.png")),
@@ -138,21 +138,21 @@ class _ScreenTwoState extends State<ScreenTwo> {
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w700,
                                 fontSize: 28,
-                                color: const Color(0xffC3DEFF)),
+                                color: AppColors.softBlue),
                           ),
                           title: Text(
                             "ONGOING",
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 6,
-                                color: const Color(0xffBDBDBD)),
+                                color: AppColors.gray),
                           ),
                           subtitle: Text(
                             "Focus Read 2",
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 12,
-                                color: const Color(0xff333333)),
+                              color: AppColors.black,),
                           ),
                           trailing: const Image(
                             image: AssetImage(("assets/images/progress.png")),
@@ -164,21 +164,21 @@ class _ScreenTwoState extends State<ScreenTwo> {
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w700,
                                 fontSize: 28,
-                                color: const Color(0xffC3DEFF)),
+                                color: AppColors.softBlue),
                           ),
                           title: Text(
                             "NEXT - 1:30pm",
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 6,
-                                color: const Color(0xffBDBDBD)),
+                                color: AppColors.gray),
                           ),
                           subtitle: Text(
                             "Focus Read 3",
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 12,
-                                color: const Color(0xff333333)),
+                                color: AppColors.black),
                           ),
                           trailing: const Image(
                             image: AssetImage(("assets/images/downlod.png")),
@@ -190,21 +190,21 @@ class _ScreenTwoState extends State<ScreenTwo> {
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w700,
                                 fontSize: 28,
-                                color: const Color(0xffC3DEFF)),
+                                color: AppColors.softBlue),
                           ),
                           title: Text(
                             "LATER - 3:30pm",
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 6,
-                                color: const Color(0xffBDBDBD)),
+                                color: AppColors.gray),
                           ),
                           subtitle: Text(
                             "Focus Read 4",
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 12,
-                                color: const Color(0xff333333)),
+                                color: AppColors.black),
                           ),
                           trailing: const Image(
                             image: AssetImage(("assets/images/downlod.png")),
@@ -216,21 +216,21 @@ class _ScreenTwoState extends State<ScreenTwo> {
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w700,
                                 fontSize: 28,
-                                color: const Color(0xffC3DEFF)),
+                                color: AppColors.softBlue),
                           ),
                           title: Text(
                             "LATER - 3:30pm",
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 6,
-                                color: const Color(0xffBDBDBD)),
+                                color: AppColors.gray),
                           ),
                           subtitle: Text(
                             "Focus Read 4",
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 12,
-                                color: const Color(0xff333333)),
+                                color: AppColors.black),
                           ),
                           trailing: const Image(
                             image: AssetImage(("assets/images/downlod.png")),
@@ -242,21 +242,21 @@ class _ScreenTwoState extends State<ScreenTwo> {
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w700,
                                 fontSize: 28,
-                                color: const Color(0xffC3DEFF)),
+                                color: AppColors.softBlue),
                           ),
                           title: Text(
                             "6:00pm",
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 6,
-                                color: const Color(0xffBDBDBD)),
+                                color: AppColors.gray),
                           ),
                           subtitle: Text(
                             "Focus Read 5",
                             style: GoogleFonts.roboto(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 12,
-                                color: const Color(0xff333333)),
+                                color: AppColors.black),
                           ),
                           trailing: const Image(
                             image: AssetImage(("assets/images/downlod.png")),

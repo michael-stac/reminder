@@ -6,6 +6,8 @@ class AppColors {
   static const black = Color(0xff333333);
   static const softBlue = Color(0xffEDF5FF);
   static const vanadyBlue = Color(0xff0097E6);
+  static const gray = Color(0xffBDBDBD);
+  static const staticLiver = Color(0xff4F4F4F);
   
 }
 
