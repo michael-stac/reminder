@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -21,6 +23,8 @@ class _TimeScreenState extends State<TimeScreen> {
     '10 hours',
   ];
 
+  String selected = '';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,40 +34,53 @@ class _TimeScreenState extends State<TimeScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-               Text(
+              Text(
                 'STUDEASY',
-                style: TextStyles.bold(
-                  14,
-                    AppColors.vanadyBlue
-                ),
+                style: TextStyles.bold(14, AppColors.vanadyBlue),
               ),
               const SizedBox(height: 40),
-               Text('How long Do you Want To Study For?',
-                  style: GoogleFonts.playfairDisplay(fontWeight:FontWeight.w700, fontSize: 36, color: const Color(0xff333333) ),
+              Text('How long Do you Want To Study For?',
+                  style: GoogleFonts.playfairDisplay(
+                      fontWeight: FontWeight.w700,
+                      fontSize: 36,
+                      color: const Color(0xff333333)),
                   maxLines: 3),
               const SizedBox(height: 21),
-               Text(
+              Text(
                 'Set your target study hours for today. you will be \nprompted at several intervals.',
-                style: GoogleFonts.roboto(fontSize: 12, fontWeight: FontWeight.w500, color: const Color(0xff4F4F4F)),
+                style: GoogleFonts.roboto(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w500,
+                    color: const Color(0xff4F4F4F)),
               ),
               const SizedBox(height: 20),
               SizedBox(
                 height: 300,
                 child: CupertinoPicker(
-
                   itemExtent: 64,
-                  onSelectedItemChanged: (index) {},
-                  selectionOverlay: Container(),
+                  onSelectedItemChanged: (index) {
+                    log(index.toString());
+                    log(items[index]);
+                    selected = items[index];
+                    setState(() {});
+                  },
+                  selectionOverlay: Container(
+                    decoration: const BoxDecoration(
+                        border: Border.symmetric(
+                            horizontal: BorderSide(color: AppColors.black))),
+                  ),
                   children: items
                       .map(
                         (item) => Text(
                           item,
-                          style: const TextStyle(fontSize: 38, color: Color(0xff333333)),
+                          style: const TextStyle(
+                              fontSize: 38, color: Color(0xff333333)),
                         ),
                       )
                       .toList(),
                 ),
               ),
+              Text(selected)
             ],
           ),
         ),
@@ -71,14 +88,18 @@ class _TimeScreenState extends State<TimeScreen> {
       floatingActionButton: FloatingActionButton(
         elevation: 0,
         onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>const ScreenOne()));
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const ScreenOne()));
         },
         backgroundColor: Colors.black,
-        child:  Text('Next',  style: GoogleFonts.roboto(
-          fontSize: 12,
-          fontWeight: FontWeight.w500,
-          color: Colors.white,
-        ),),
+        child: Text(
+          'Next',
+          style: GoogleFonts.roboto(
+            fontSize: 12,
+            fontWeight: FontWeight.w500,
+            color: Colors.white,
+          ),
+        ),
       ),
     );
   }
