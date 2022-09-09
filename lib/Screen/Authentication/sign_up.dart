@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:reminder/Screen/sucessful.dart';
 
-import '../Styles/colors.dart';
+import '../../Styles/colors.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -46,7 +46,7 @@ class _RegisterPageState extends State<RegisterPage> {
           "STUDEASY",
           style: TextStyles.bold(
             14,
-            AppColors.appColor,
+              AppColors.vanadyBlue
           ),
         ),
       ),

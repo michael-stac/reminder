@@ -2,8 +2,11 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const charcoal = Color.fromRGBO(61, 80, 89, 1);
-  static const appColor = Color.fromRGBO(0, 151, 230, 1);
+  static const white = Color(0xffE5E5E5);
+  static const black = Color(0xff333333);
+  static const softBlue = Color(0xffEDF5FF);
+  static const vanadyBlue = Color(0xff0097E6);
+  
 }
 
 class TextStyles {

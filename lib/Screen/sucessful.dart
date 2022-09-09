@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../Styles/colors.dart';
+import 'screen_two.dart';
 
 class LastScreen extends StatelessWidget {
   const LastScreen({Key? key}) : super(key: key);
@@ -17,7 +18,7 @@ class LastScreen extends StatelessWidget {
           "STUDEASY",
           style: TextStyles.bold(
             14,
-            AppColors.appColor,
+            AppColors.vanadyBlue
           ),
         ),
       ),
@@ -43,8 +44,11 @@ class LastScreen extends StatelessWidget {
                      textAlign: TextAlign.center,
                      style: GoogleFonts.roboto(fontSize: 12, fontWeight: FontWeight.w500, color: const Color(0xff4F4F4F)),
                    ),
-                   SizedBox(height: 110,),
+                   const SizedBox(height: 110,),
                    GestureDetector(
+                     onTap: () {
+                       Navigator.push(context, MaterialPageRoute(builder: (context) => ScreenTwo()));
+                     },
                      child: Container(
                        padding: const EdgeInsets.all(20),
                        decoration: const BoxDecoration(

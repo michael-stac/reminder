@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:reminder/Screen/sign_up.dart';
+import 'package:reminder/Screen/Authentication/sign_up.dart';
 import 'package:reminder/Styles/colors.dart';
 
-import '../Controller/onboarding_controller/onborading_controller.dart';
+import '../../Controller/onboarding_controller/onborading_controller.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({Key? key}) : super(key: key);
@@ -58,7 +58,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
             "STUDEASY",
             style: TextStyles.bold(
               14,
-              AppColors.appColor,
+                AppColors.vanadyBlue
             ),
           ),
         ),
