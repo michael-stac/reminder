@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:reminder/Screen/screen_two.dart';
 
+import '../Styles/colors.dart';
 import '../Widget/kpmor.dart';
 
 
@@ -19,8 +19,7 @@ class ScreenOne extends StatelessWidget {
             const Text(
               'STUDEASY',
               style: TextStyle(
-                color: Colors.blue,
-                fontWeight: FontWeight.bold,
+                color: AppColors.vanadyBlue,                fontWeight: FontWeight.bold,
                 fontSize: 17,
               ),
             ),
@@ -34,23 +33,23 @@ class ScreenOne extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            Text(
+            const Text(
               'To better set prompts that will be at your convenience. We need this little info.',
-              style: TextStyle(fontSize: 14, color: Colors.grey.shade700),
+              style: TextStyle(fontSize: 14, color: AppColors.gray),
             ),
             const SizedBox(height: 59),
-            Center(
+            const Center(
               child: Text(
                 'YOU ARE A',
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: Colors.grey.shade600,
+                  color: AppColors.gray,
                 ),
               ),
             ),
             const SizedBox(height: 20),
-            SizedBox(height: 12,),
+            const SizedBox(height: 12,),
             Row(
               children:  const [
                 Kprompt(
