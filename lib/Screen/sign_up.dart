@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:reminder/Screen/one_last_thing.dart';
 import 'package:reminder/Screen/sucessful.dart';
 
 import '../Styles/colors.dart';
@@ -23,7 +24,7 @@ class _RegisterPageState extends State<RegisterPage> {
           backgroundColor: const Color(0xff333333),
           onPressed: () {
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const LastScreen()));
+                MaterialPageRoute(builder: (context) => const ScreenOne()));
           },
           child: Padding(
             padding: const EdgeInsets.only(left: 9, right: 9),
