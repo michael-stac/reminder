@@ -2,8 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../Styles/colors.dart';
-import 'one_last_thing.dart';
+import '../../Styles/colors.dart';
+import '../one_last_thing.dart';
 
 class TimeScreen extends StatefulWidget {
   const TimeScreen({Key? key}) : super(key: key);
@@ -34,7 +34,7 @@ class _TimeScreenState extends State<TimeScreen> {
                 'STUDEASY',
                 style: TextStyles.bold(
                   14,
-                  AppColors.appColor,
+                    AppColors.vanadyBlue
                 ),
               ),
               const SizedBox(height: 40),

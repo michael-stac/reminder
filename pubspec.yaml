@@ -66,6 +66,9 @@ flutter:
     - assets/images/peeps.png
     - assets/images/Union.png
     - assets/images/moon.png
+    - assets/images/loading.png
+    - assets/images/progress.png
+    - assets/images/downlod.png
     - assets/images/settings.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
